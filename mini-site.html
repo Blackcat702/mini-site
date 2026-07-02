@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+
+<style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #1a1a3d;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    background: #eaf2fb;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+main {
+    flex: 3;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+aside {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #1a1a3d;
+    color: white;
+    padding: 30px 5%;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85em;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">LOGO</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <a href="#" class="cta-button">Sign Up</a>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Our Website</h1>
+    <p>We're committed to giving you the best experience possible.</p>
+    <a href="#" class="cta-button">Get Started</a>
+</section>
+
+<div class="content-wrapper">
+
+    <main>
+        <article class="card">
+            <h2>Topic One</h2>
+            <p>A short description of this topic goes here.</p>
+            <a href="#">Read more</a>
+        </article>
+
+        <article class="card">
+            <h2>Topic Two</h2>
+            <p>A short description of this topic goes here.</p>
+            <a href="#">Read more</a>
+        </article>
+
+        <article class="card">
+            <h2>Topic Three</h2>
+            <p>A short description of this topic goes here.</p>
+            <a href="#">Read more</a>
+        </article>
+    </main>
+
+    <aside>
+        <h3>Sidebar</h3>
+        <ul>
+            <li>Submenu 1</li>
+            <li>Submenu 2</li>
+            <li>Submenu 3</li>
+        </ul>
+
+        <h3>Recommended Articles</h3>
+        <p>An interesting article title</p>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="footer-col">
+        <h3>About Us</h3>
+        <p>A short note about the site or organization.</p>
+    </div>
+
+    <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: 02-123-4567</p>
+    </div>
+
+    <p class="copyright">&copy; 2026 My Website. All rights reserved.</p>
+</footer>
+
+<a href="#" class="back-to-top">&uarr;</a>
+
+<script>
+window.onscroll = function () {
+    const btn = document.querySelector(".back-to-top");
+
+    btn.style.display =
+        (document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200)
+        ? "block"
+        : "none";
+};
+</script>
+
+</body>
+</html>
